@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".paymentgateway">
+
+
+    <!--Button for getting OTP-->
+
+    <!--Edittext for getting otp from user-->
+    <!--button for verifying user OTP-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="391dp"
+        android:layout_height="474dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:text="Button"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="575dp" />
+
+        <Button
+            android:id="@+id/idBtnVerify"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/button_style_2"
+            android:text="Verify OTP and Pay"
+            android:textAllCaps="false"
+            app:backgroundTint="#5AAC5D" />
+
+        <EditText
+            android:id="@+id/idEdtOtp"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:hint="Enter OTP"
+            android:background="@drawable/textbox"
+            android:layout_marginTop="240dp"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+             />
+
+        <Button
+            android:id="@+id/idBtnGetOtp"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/button_style_2"
+
+            app:backgroundTint="#FF5533"
+            android:text="Get OTP"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/idEdtPhoneNumber"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textbox"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="19dp"
+            android:hint="Enter your phone"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            app:srcCompat="@drawable/amount" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="150"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

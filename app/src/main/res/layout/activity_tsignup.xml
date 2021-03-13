@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsecond"
+    tools:context=".tsignup">
+    <androidx.cardview.widget.CardView android:layout_height="0dp" android:layout_width="0dp" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:cardCornerRadius="10dp" android:layout_marginBottom="36dp" android:layout_marginEnd="19dp" android:layout_marginTop="36dp" android:layout_marginStart="19dp" android:id="@+id/cardView">
+
+
+        -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:layout_margin="10dp">
+
+        <ImageView android:layout_height="100dp" android:layout_width="match_parent" android:layout_marginBottom="10dp" android:id="@+id/imageView" app:srcCompat="@drawable/meeting"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="VISIONMILE"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_height="150dp" android:layout_width="150dp" app:layout_constraintTop_toTopOf="parent" android:id="@+id/profile_image" app:layout_constraintBottom_toTopOf="@+id/username" app:civ_border_width="2dp" app:civ_border_color="#FF000000" android:src="@drawable/profilepic" android:layout_marginLeft="90dp"/>
+
+        <EditText android:background="@drawable/textbox" android:layout_height="43dp" android:layout_width="match_parent" android:id="@+id/about" android:padding="10dp" android:inputType="textMultiLine" android:hint="About" android:ems="10" android:drawablePadding="20dp" />
+
+        <EditText android:background="@drawable/textbox" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/namebox" android:padding="10dp" android:inputType="textPersonName" android:hint="Full Name" android:ems="10" android:drawablePadding="20dp" android:drawableLeft="@drawable/profileicon"/>
+
+        <EditText android:background="@drawable/textbox" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/emailBox" android:padding="10dp" android:inputType="textEmailAddress" android:hint="Email Address" android:ems="10" android:drawablePadding="20dp" android:drawableLeft="@drawable/email"/>
+
+        <EditText android:background="@drawable/textbox" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/passwordBox" android:padding="10dp" android:inputType="textPassword" android:hint="Password" android:ems="10" android:drawablePadding="20dp" android:drawableLeft="@drawable/password"/>
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style_2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Create an account"
+            android:textColor="@android:color/white" />
+
+        <Button android:background="@drawable/button_style" android:layout_height="40dp" android:layout_width="match_parent" android:layout_marginTop="30dp" android:id="@+id/loginbtn" android:textColor="@android:color/white" android:text="Already have an account?" app:backgroundTint="#F61212"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

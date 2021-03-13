@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+    <androidx.cardview.widget.CardView android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:cardCornerRadius="10dp" android:layout_marginRight="50dp" android:layout_marginLeft="50dp">
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:layout_margin="10dp">
+
+    <ImageView android:layout_height="100dp" android:layout_width="match_parent" app:srcCompat="@drawable/meeting" android:layout_marginBottom="10dp" android:id="@+id/imageView"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="VISIONMILE"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    <EditText android:background="@drawable/textbox" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/emailBox" android:padding="10dp" android:inputType="textEmailAddress" android:hint="Email Address" android:ems="10" android:drawablePadding="20dp" android:drawableLeft="@drawable/email"/>
+
+    <EditText android:background="@drawable/textbox" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/passwordBox" android:padding="10dp" android:inputType="textPassword" android:hint="Password" android:ems="10" android:drawablePadding="20dp" android:drawableLeft="@drawable/password" android:layout_marginTop="10dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginRight="5dp" android:id="@+id/textView3" android:text="Forgot Password?" android:gravity="right" android:layout_marginTop="3dp"/>
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Remember me"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button android:background="@drawable/button_style" android:layout_height="40dp" android:layout_width="150dp" android:id="@+id/loginbtn" android:textColor="@android:color/white" android:text="Login" android:layout_marginTop="20dp" android:layout_gravity="center"/>
+
+    <Button android:background="@drawable/button_style_2" android:layout_height="40dp" android:layout_width="match_parent" android:id="@+id/createBtn" android:textColor="@android:color/white" android:text="Create an account" android:layout_marginTop="10dp" app:backgroundTint="#F40B0B"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="hit"
+        android:text="Button"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
